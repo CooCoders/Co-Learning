@@ -1,35 +1,18 @@
-<!-- Test component -->
+<!-- test vue component -->
 <template>
   <div>
-    <h3>this is a test sentence</h3>
-    {{ count }}
-    <!-- <button v-on="click()">add</button> -->
+    <h3>this is a test setence</h3>
+    <p>{{ count }}</p>
+    <button @click="add">add</button>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      count: 0,
-    }
-  },
-
-  components: {},
-
-  computed: {},
-
-  // mounted: {},
-
-  methods: {
-    click() {
-      this.count += 1
-    },
-  },
+<script setup>
+import { ref } from 'vue'
+const count = ref(0)
+console.log(count)
+const add = () => {
+  count.value += 1
 }
 </script>
-<style lang="css" scoped>
-h3 {
-  color: red;
-}
-</style>
+<style lang="stylus" scoped></style>
