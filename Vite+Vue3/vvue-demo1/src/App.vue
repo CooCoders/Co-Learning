@@ -3,12 +3,16 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import Test from './components/Test.vue'
 import Test2 from './components/Test2.vue'
+import ReactivityDemo from './components/ReactivityDemo.vue'
+import ComputedProp from './components/ComputedProp.vue'
 </script>
 
 <template>
   <div class="container">
     <Test></Test>
     <Test2></Test2>
+    <ReactivityDemo></ReactivityDemo>
+    <ComputedProp></ComputedProp>
   </div>
 </template>
 
@@ -16,9 +20,12 @@ import Test2 from './components/Test2.vue'
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  align-content: space-between;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 </style>
