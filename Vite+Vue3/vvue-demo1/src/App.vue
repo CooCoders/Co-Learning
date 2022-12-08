@@ -1,18 +1,20 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import Test from './components/Test.vue'
-import Test2 from './components/Test2.vue'
-import ReactivityDemo from './components/ReactivityDemo.vue'
-import ComputedProp from './components/ComputedProp.vue'
+// import Test from './components/Test.vue'
+// import Test2 from './components/Test2.vue'
+// import ReactivityDemo from './components/ReactivityDemo.vue'
+// import ComputedProp from './components/ComputedProp.vue'
+import ClassBindVue from './components/ClassBind.vue'
 </script>
 
 <template>
   <div class="container">
-    <Test></Test>
+    <!-- <Test></Test>
     <Test2></Test2>
     <ReactivityDemo></ReactivityDemo>
-    <ComputedProp></ComputedProp>
+    <ComputedProp></ComputedProp> -->
+    <ClassBindVue></ClassBindVue>
   </div>
 </template>
 
