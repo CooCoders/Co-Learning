@@ -5,7 +5,8 @@
 // import Test2 from './components/Test2.vue'
 // import ReactivityDemo from './components/ReactivityDemo.vue'
 // import ComputedProp from './components/ComputedProp.vue'
-import ClassBindVue from './components/ClassBind.vue'
+// import ClassBindVue from './components/ClassBind.vue'
+import ListDemoVue from './components/ListDemo.vue'
 </script>
 
 <template>
@@ -14,7 +15,8 @@ import ClassBindVue from './components/ClassBind.vue'
     <Test2></Test2>
     <ReactivityDemo></ReactivityDemo>
     <ComputedProp></ComputedProp> -->
-    <ClassBindVue></ClassBindVue>
+    <!-- <ClassBindVue></ClassBindVue> -->
+    <ListDemoVue></ListDemoVue>
   </div>
 </template>
 
