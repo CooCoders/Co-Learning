@@ -9,6 +9,7 @@
 // import ListDemoVue from './components/ListDemo.vue'
 import ReviewVue from './components/Review.vue'
 import LifeCycleVue from './components/LifeCycle.vue'
+import WatcherVue from './components/Watcher.vue'
 </script>
 
 <template>
@@ -20,7 +21,8 @@ import LifeCycleVue from './components/LifeCycle.vue'
     <!-- <ClassBindVue></ClassBindVue> -->
     <!-- <ListDemoVue></ListDemoVue> -->
     <!-- <ReviewVue></ReviewVue> -->
-    <LifeCycleVue></LifeCycleVue>
+    <!-- <LifeCycleVue></LifeCycleVue> -->
+    <WatcherVue></WatcherVue>
   </div>
 </template>
 
