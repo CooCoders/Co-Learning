@@ -8,6 +8,7 @@
 // import ClassBindVue from './components/ClassBind.vue'
 // import ListDemoVue from './components/ListDemo.vue'
 import ReviewVue from './components/Review.vue'
+import LifeCycleVue from './components/LifeCycle.vue'
 </script>
 
 <template>
@@ -18,7 +19,8 @@ import ReviewVue from './components/Review.vue'
     <ComputedProp></ComputedProp> -->
     <!-- <ClassBindVue></ClassBindVue> -->
     <!-- <ListDemoVue></ListDemoVue> -->
-    <ReviewVue></ReviewVue>
+    <!-- <ReviewVue></ReviewVue> -->
+    <LifeCycleVue></LifeCycleVue>
   </div>
 </template>
 
