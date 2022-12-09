@@ -22,7 +22,8 @@ import WatcherVue from './components/Watcher.vue'
     <!-- <ListDemoVue></ListDemoVue> -->
     <!-- <ReviewVue></ReviewVue> -->
     <!-- <LifeCycleVue></LifeCycleVue> -->
-    <WatcherVue></WatcherVue>
+    <!-- <WatcherVue></WatcherVue> -->
+    <GC></GC>
   </div>
 </template>
 
