@@ -10,6 +10,7 @@
 import ReviewVue from './components/Review.vue'
 import LifeCycleVue from './components/LifeCycle.vue'
 import WatcherVue from './components/Watcher.vue'
+import RootVue from './components/props/Root.vue'
 </script>
 
 <template>
@@ -23,7 +24,8 @@ import WatcherVue from './components/Watcher.vue'
     <!-- <ReviewVue></ReviewVue> -->
     <!-- <LifeCycleVue></LifeCycleVue> -->
     <!-- <WatcherVue></WatcherVue> -->
-    <GC></GC>
+    <!-- <GC></GC> -->
+    <RootVue></RootVue>
   </div>
 </template>
 
