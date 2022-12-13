@@ -11,7 +11,8 @@ import ReviewVue from './components/Review.vue'
 import LifeCycleVue from './components/LifeCycle.vue'
 import WatcherVue from './components/Watcher.vue'
 import RootVue from './components/props/Root.vue'
-import ParentVue from './components/review/Parent.vue'
+// import ParentVue from './components/review/Parent.vue'
+import ParentVue from './components/fallthrough-attrs/Parent.vue'
 </script>
 
 <template>
