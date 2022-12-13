@@ -13,6 +13,7 @@ import WatcherVue from './components/Watcher.vue'
 import RootVue from './components/props/Root.vue'
 // import ParentVue from './components/review/Parent.vue'
 import ParentVue from './components/fallthrough-attrs/Parent.vue'
+import DemoVue from './components/slots/Demo.vue'
 </script>
 
 <template>
@@ -28,7 +29,8 @@ import ParentVue from './components/fallthrough-attrs/Parent.vue'
     <!-- <WatcherVue></WatcherVue> -->
     <!-- <GC></GC> -->
     <!-- <RootVue></RootVue> -->
-    <ParentVue></ParentVue>
+    <!-- <ParentVue></ParentVue> -->
+    <DemoVue></DemoVue>
   </div>
 </template>
 
