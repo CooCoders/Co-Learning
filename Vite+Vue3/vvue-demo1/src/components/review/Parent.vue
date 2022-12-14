@@ -10,15 +10,23 @@
       <template v-slot:tst2>
         <div class="test">test paragraph 2</div>
       </template>
+
+      <template v-slot:default="data">
+        <div>
+          <p>receive data: {{ data.txt1 }} --- {{ data.txt2 }}</p>
+        </div>
+      </template>
     </Child1Vue>
   </div>
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, provide } from 'vue'
 import Child1Vue from './Child1.vue'
 
 const text = ref('value from parent')
+
+provide('stext', text)
 
 const recData = (msg) => {
   text.value = msg.value
