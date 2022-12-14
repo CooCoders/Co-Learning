@@ -3,6 +3,8 @@
   <div>
     <p>Child value: {{ text }}</p>
     <button @click="send">send</button>
+    <slot name="tst"></slot>
+    <slot name="tst2"></slot>
   </div>
 </template>
 

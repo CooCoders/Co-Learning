@@ -2,7 +2,15 @@
 <template>
   <div>
     <p>Parent value: {{ text }}</p>
-    <Child1Vue @sendData="recData"></Child1Vue>
+    <Child1Vue @sendData="recData">
+      <template v-slot:tst>
+        <div>some text from parent component</div>
+      </template>
+
+      <template v-slot:tst2>
+        <div class="test">test paragraph 2</div>
+      </template>
+    </Child1Vue>
   </div>
 </template>
 
@@ -16,4 +24,9 @@ const recData = (msg) => {
   text.value = msg.value
 }
 </script>
-<style scoped></style>
+<style scoped>
+.test {
+  color: red;
+  font-size: 20px;
+}
+</style>
