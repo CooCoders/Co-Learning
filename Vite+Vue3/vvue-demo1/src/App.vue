@@ -12,9 +12,10 @@ import LifeCycleVue from './components/LifeCycle.vue'
 import WatcherVue from './components/Watcher.vue'
 import RootVue from './components/props/Root.vue'
 // import ParentVue from './components/review/Parent.vue'
-import ParentVue from './components/fallthrough-attrs/Parent.vue'
+// import ParentVue from './components/fallthrough-attrs/Parent.vue'
 // import DemoVue from './components/slots/Demo.vue'
 import DemoVue from './components/inject-value/Demo.vue'
+import ParentVue from './components/review/Parent.vue'
 </script>
 
 <template>
@@ -31,7 +32,8 @@ import DemoVue from './components/inject-value/Demo.vue'
     <!-- <GC></GC> -->
     <!-- <RootVue></RootVue> -->
     <!-- <ParentVue></ParentVue> -->
-    <DemoVue></DemoVue>
+    <!-- <DemoVue></DemoVue> -->
+    <ParentVue></ParentVue>
   </div>
 </template>
 

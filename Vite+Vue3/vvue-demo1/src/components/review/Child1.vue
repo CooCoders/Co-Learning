@@ -1,26 +1,17 @@
+<!-- 父子组件传值 -->
 <template>
   <div>
-    <div class="container">
-      <p>Child value:</p>
-      <button @click="send">send</button>
-    </div>
+    <p>Child value: {{ text }}</p>
+    <button @click="send">send</button>
   </div>
 </template>
 
 <script setup>
-import { ref, reactive, onMounted } from 'vue'
-
-const val = ref('value from child')
-const emit = defineEmits(['update:sendVal'])
-
+import { ref, reactive } from 'vue'
+const emit = defineEmits(['sendData'])
+const text = ref('text from child')
 const send = () => {
-  emit('update:sendVal', val.value)
+  emit('sendData', text)
 }
 </script>
-<style scoped>
-.container {
-  height: 200px;
-  width: 200px;
-  border: 1px solid black;
-}
-</style>
+<style scoped></style>
