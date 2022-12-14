@@ -16,6 +16,7 @@ import RootVue from './components/props/Root.vue'
 // import DemoVue from './components/slots/Demo.vue'
 import DemoVue from './components/inject-value/Demo.vue'
 import ParentVue from './components/review/Parent.vue'
+import HooksVue from './components/composition-functions/Hooks.vue'
 </script>
 
 <template>
@@ -33,7 +34,8 @@ import ParentVue from './components/review/Parent.vue'
     <!-- <RootVue></RootVue> -->
     <!-- <ParentVue></ParentVue> -->
     <!-- <DemoVue></DemoVue> -->
-    <ParentVue></ParentVue>
+    <!-- <ParentVue></ParentVue> -->
+    <HooksVue></HooksVue>
   </div>
 </template>
 
