@@ -19,6 +19,7 @@ import ParentVue from './components/review/Parent.vue'
 import HooksVue from './components/composition-functions/Hooks.vue'
 import CDemoVue from './components/customize-directives/CDemo.vue'
 import RDemoVue from './components/routers/RDemo.vue'
+import MainVue from './components/pinia/Main.vue'
 </script>
 
 <template>
@@ -39,7 +40,8 @@ import RDemoVue from './components/routers/RDemo.vue'
     <!-- <ParentVue></ParentVue> -->
     <!-- <HooksVue></HooksVue> -->
     <!-- <CDemoVue></CDemoVue> -->
-    <RDemoVue></RDemoVue>
+    <!-- <RDemoVue></RDemoVue> -->
+    <MainVue></MainVue>
   </div>
 </template>
 
