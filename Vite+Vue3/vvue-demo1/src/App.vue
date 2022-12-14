@@ -18,6 +18,7 @@ import DemoVue from './components/inject-value/Demo.vue'
 import ParentVue from './components/review/Parent.vue'
 import HooksVue from './components/composition-functions/Hooks.vue'
 import CDemoVue from './components/customize-directives/CDemo.vue'
+import RDemoVue from './components/routers/RDemo.vue'
 </script>
 
 <template>
@@ -37,7 +38,8 @@ import CDemoVue from './components/customize-directives/CDemo.vue'
     <!-- <DemoVue></DemoVue> -->
     <!-- <ParentVue></ParentVue> -->
     <!-- <HooksVue></HooksVue> -->
-    <CDemoVue></CDemoVue>
+    <!-- <CDemoVue></CDemoVue> -->
+    <RDemoVue></RDemoVue>
   </div>
 </template>
 

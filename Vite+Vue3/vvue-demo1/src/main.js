@@ -3,6 +3,7 @@ import './style.css'
 import App from './App.vue'
 import GlobalComp from './components/GlobalComp.vue'
 import myDirective from './components/customize-directives/myDirective'
+import router from './components/routers/router'
 
 // createApp(App).mount('#app')
 const app = createApp(App)
@@ -10,6 +11,7 @@ const app = createApp(App)
 app.component('GC', GlobalComp)
 // 注册自定义的指令
 app.directive('focus', myDirective)
+app.use(router)
 app.mount('#app')
 
 // setTimeout(() => {
