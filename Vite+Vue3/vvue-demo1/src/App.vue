@@ -20,6 +20,7 @@ import HooksVue from './components/composition-functions/Hooks.vue'
 import CDemoVue from './components/customize-directives/CDemo.vue'
 import RDemoVue from './components/routers/RDemo.vue'
 import MainVue from './components/pinia/Main.vue'
+import PRootVue from './components/review/PRoot.vue'
 </script>
 
 <template>
@@ -41,7 +42,8 @@ import MainVue from './components/pinia/Main.vue'
     <!-- <HooksVue></HooksVue> -->
     <!-- <CDemoVue></CDemoVue> -->
     <!-- <RDemoVue></RDemoVue> -->
-    <MainVue></MainVue>
+    <!-- <MainVue></MainVue> -->
+    <PRootVue></PRootVue>
   </div>
 </template>
 
