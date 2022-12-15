@@ -1,6 +1,6 @@
 <!-- pinia test root -->
 <template>
-  <div>
+  <div class="root-container">
     <h3>Root Vue</h3>
     <p>Count: {{ storage.count }}</p>
     <button @click="storage.add()">add</button>
@@ -17,4 +17,8 @@ import PCh2Vue from './PCh2.vue'
 
 const storage = useCountStore()
 </script>
-<style scoped></style>
+<style scoped>
+.root-container {
+  width: 100%;
+}
+</style>

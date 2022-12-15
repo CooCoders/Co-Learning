@@ -3,7 +3,8 @@ import { defineStore } from 'pinia'
 const useCountStore = defineStore('countStore', {
   state: () => {
     return {
-      count: 0
+      count: 0,
+      text: 'original text'
     }
   },
   actions: {
@@ -12,6 +13,9 @@ const useCountStore = defineStore('countStore', {
     },
     sub() {
       this.count--
+    },
+    chg(text) {
+      this.text = text
     }
   }
 })
