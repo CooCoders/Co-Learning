@@ -21,6 +21,7 @@ import CDemoVue from './components/customize-directives/CDemo.vue'
 import RDemoVue from './components/routers/RDemo.vue'
 import MainVue from './components/pinia/Main.vue'
 import PRootVue from './components/review/PRoot.vue'
+import ProductVue from './components/pinia/Product.vue'
 </script>
 
 <template>
@@ -43,7 +44,8 @@ import PRootVue from './components/review/PRoot.vue'
     <!-- <CDemoVue></CDemoVue> -->
     <!-- <RDemoVue></RDemoVue> -->
     <!-- <MainVue></MainVue> -->
-    <PRootVue></PRootVue>
+    <!-- <PRootVue></PRootVue> -->
+    <ProductVue></ProductVue>
   </div>
 </template>
 
