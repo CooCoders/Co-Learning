@@ -19,9 +19,10 @@ import ParentVue from './components/review/Parent.vue'
 import HooksVue from './components/composition-functions/Hooks.vue'
 import CDemoVue from './components/customize-directives/CDemo.vue'
 import RDemoVue from './components/routers/RDemo.vue'
-import MainVue from './components/pinia/Main.vue'
+// import MainVue from './components/pinia/Main.vue'
 import PRootVue from './components/review/PRoot.vue'
 import ProductVue from './components/pinia/Product.vue'
+import MainVue from './components/review/pinia/Main.vue'
 </script>
 
 <template>
@@ -45,7 +46,8 @@ import ProductVue from './components/pinia/Product.vue'
     <!-- <RDemoVue></RDemoVue> -->
     <!-- <MainVue></MainVue> -->
     <!-- <PRootVue></PRootVue> -->
-    <ProductVue></ProductVue>
+    <!-- <ProductVue></ProductVue> -->
+    <MainVue></MainVue>
   </div>
 </template>
 
