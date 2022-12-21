@@ -8,5 +8,11 @@ const createWindow = () => {
 
   // win.loadURL('https://www.zhihu.com/hot')
   win.loadFile('./test.html')
+
+  // 隐藏警告信息
+  process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'
+
+  // 打开调试工具
+  win.webContents.openDevTools()
 }
 app.whenReady().then(createWindow)
