@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
 
 const createWindow = () => {
@@ -34,5 +34,9 @@ app.on('quit', () => {
   console.log('app quit')
 })
 
+// 异步监听
+ipcMain.handle('send-event', (event, msg) => {
+  console.log(msg)
+})
 
 app.whenReady().then(createWindow)
