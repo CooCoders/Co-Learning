@@ -1,12 +1,20 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
+const WinState = require('electron-win-state').default
+
+console.log(WinState)
 
 const createWindow = () => {
+  const winState = new WinState({
+    defaultWidth: 800,
+    defaultHeight: 600
+  })
   const win = new BrowserWindow({
-    width: 1000,
-    height: 600,
-    x: 100,
-    y: 100,
+    ...winState.winOptions,
+    // width: 1000,
+    // height: 600,
+    // x: 100,
+    // y: 100,
     show: false,
     backgroundColor: '#ccc',
     // 是否隐藏标题栏
@@ -17,6 +25,8 @@ const createWindow = () => {
       preload: path.resolve(__dirname, './render/preload.js')
     }
   })
+
+
 
   // 加载外部网页
   // win.loadURL('https://mirrorn.github.io/')
@@ -43,36 +53,39 @@ const createWindow = () => {
   // })
 
   // win2.loadURL('http://www.baidu.com')
+
+  console.log(winState.winOptions)
+  winState.manage(this.win)
 }
 
 
 
 // 主进程生命周期函数
-app.on('window-all-closed', () => {
-  console.log('window all closed')
-  if (process.platform !== 'darwin') {
-    app.quit()
-  }
-})
+// app.on('window-all-closed', () => {
+//   console.log('window all closed')
+//   if (process.platform !== 'darwin') {
+//     app.quit()
+//   }
+// })
 
-app.on('before-quit', () => {
-  console.log('before-quit term.')
-})
+// app.on('before-quit', () => {
+//   console.log('before-quit term.')
+// })
 
-app.on('browser-window-blur', () => {
-  // console.log('blur')
-  // setTimeout(() => {
-  //   app.quit()
-  // }, 3000)
-})
+// app.on('browser-window-blur', () => {
+//   // console.log('blur')
+//   // setTimeout(() => {
+//   //   app.quit()
+//   // }, 3000)
+// })
 
-app.on('browser-window-focus', () => {
-  console.log('focus')
-})
+// app.on('browser-window-focus', () => {
+//   console.log('focus')
+// })
 
-app.on('quit', () => {
-  console.log('app quit')
-})
+// app.on('quit', () => {
+//   console.log('app quit')
+// })
 
 // 异步监听
 ipcMain.handle('send-event', (event, msg) => {
