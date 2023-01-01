@@ -39,6 +39,23 @@ const createWindow = () => {
 
   // 打开调试工具
   // win.webContents.openDevTools()
+  const wc = win.webContents
+  // 判断页面资源是否加载完毕
+  wc.on('did-finish-load', () => {
+    console.log('finish')
+  })
+
+  wc.on('dom-ready', () => {
+    console.log('dom-ready')
+  })
+
+  // 判断是否点击右键：
+  wc.on('context-menu', (e, params) => {
+    // e.preventDefault()
+    console.log('menu')
+    wc.executeJavaScript(`alert('${params.selectionText}')`)
+  })
+
 
   // 当页面内容加载完成的时候再显示页面
   win.once('ready-to-show', () => {
@@ -54,8 +71,8 @@ const createWindow = () => {
 
   // win2.loadURL('http://www.baidu.com')
 
-  console.log(winState.winOptions)
-  winState.manage(this.win)
+  // console.log(winState.winOptions)
+  // winState.manage(this.win)
 }
 
 
