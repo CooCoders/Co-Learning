@@ -5,9 +5,12 @@ const createWindow = () => {
   const win = new BrowserWindow({
     width: 1000,
     height: 600,
+    x: 100,
+    y: 100,
     show: false,
     backgroundColor: '#ccc',
-    frame: false,
+    // 是否隐藏标题栏
+    // frame: false,
     webPreferences: {
       // nodeIntegration: true,
       // contextIsolation: false
