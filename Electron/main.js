@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron')
+const { app, BrowserWindow, ipcMain, dialog } = require('electron')
 const path = require('path')
 const WinState = require('electron-win-state').default
 
@@ -53,7 +53,34 @@ const createWindow = () => {
   wc.on('context-menu', (e, params) => {
     // e.preventDefault()
     console.log('menu')
-    wc.executeJavaScript(`alert('${params.selectionText}')`)
+    // 可以注入 js 代码
+    // wc.executeJavaScript(`alert('${params.selectionText}')`)
+
+    // 显示文件选择对话框
+    // dialog.showOpenDialog({
+    //   buttonLabel: 'Select',
+    //   defaultPath: app.getPath('desktop'),
+    //   properties: ['multiSelections', 'createDirectory', 'openFile', 'openDirectory']
+    // }).then((result) => {
+    //   console.log(result.filePaths)
+    // })
+
+    // 保存对话框
+    // dialog.showSaveDialog({}).then(result => {
+    //   // 注意这里只是显示对话框 实际的保存需要另写逻辑
+    //   console.log(result.filePath)
+    // })
+
+    // 消息框
+    const answers = ['Yes', 'No', 'Maybe', 'Maybe OK']
+    dialog.showMessageBox({
+      title: 'Message Box',
+      message: 'Select one',
+      detail: 'message box detail',
+      buttons: answers
+    }).then(({ response }) => {
+      console.log(`User selected: ${answers[response]}`)
+    })
   })
 
 
