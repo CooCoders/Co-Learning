@@ -1,4 +1,5 @@
 const { app, BrowserWindow, ipcMain, dialog, globalShortcut, Menu, MenuItem } = require('electron')
+const createTray = require('./tray.js')
 const path = require('path')
 // import { app, BrowserWindow, ipcMain, dialog, globalShortcut, Menu, MenuItem } from 'electron'
 // import path from 'path'
@@ -175,6 +176,8 @@ const createWindow = () => {
 
   // console.log(winState.winOptions)
   // winState.manage(this.win)
+
+  createTray(app, win)
 }
 
 
