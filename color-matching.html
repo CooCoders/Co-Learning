@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color-Matching</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Poppins, sans-serif;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+      background-color: #c8fafc;
+    }
+
+    .block {
+      margin: 20px;
+      height: 120px;
+      width: 100px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+
+    .inside {
+      height: 95px;
+      width: 100%;
+    }
+
+    .text {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="block">
+      <div class="inside" style="background-color:#212a72"></div>
+      <div class="text">#212a72</div>
+    </div>
+
+    <div class="block">
+      <div class="inside" style="background-color:#2a2a72"></div>
+      <div class="text">#2a2a72</div>
+    </div>
+
+    <div class="block">
+      <div class="inside" style="background-color:#bbbbbb"></div>
+      <div class="text">#bbbbb</div>
+    </div>
+
+    <div class="block">
+      <div class="inside" style="background-color:#4c2885"></div>
+      <div class="text">#4c2885</div>
+    </div>
+
+  </div>
+</body>
+
+</html>
