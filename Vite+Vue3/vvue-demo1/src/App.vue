@@ -37,7 +37,7 @@ import MainVue from './components/review/pinia/Main.vue'
     <!-- <LifeCycleVue></LifeCycleVue> -->
     <!-- <WatcherVue></WatcherVue> -->
     <!-- <GC></GC> -->
-    <!-- <RootVue></RootVue> -->
+    <RootVue></RootVue>
     <!-- <ParentVue></ParentVue> -->
     <!-- <DemoVue></DemoVue> -->
     <!-- <ParentVue></ParentVue> -->
@@ -47,7 +47,7 @@ import MainVue from './components/review/pinia/Main.vue'
     <!-- <MainVue></MainVue> -->
     <!-- <PRootVue></PRootVue> -->
     <!-- <ProductVue></ProductVue> -->
-    <MainVue></MainVue>
+    <!-- <MainVue></MainVue> -->
   </div>
 </template>
 
