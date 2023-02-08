@@ -2,6 +2,11 @@ import express from 'express'
 import bodyParser from 'body-parser'
 
 const app = express()
+
+// 托管静态资源
+app.use('/pages', express.static('./public'))
+app.use('/files', express.static('./files'))
+
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
