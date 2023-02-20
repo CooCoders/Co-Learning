@@ -7,13 +7,15 @@ import Review1 from './components/Review1.vue'
 import Review2 from './components/Review2.vue'
 import Review3 from './components/Review3.vue'
 import Board from './components/Board.vue'
+import Watch from './components/Watch.vue'
 </script>
 
 <template>
   <div>
     <!-- <Counter></Counter> -->
     <!-- <Review3></Review3> -->
-    <Board></Board>
+    <!-- <Board></Board> -->
+    <Watch></Watch>
   </div>
 </template>
 
