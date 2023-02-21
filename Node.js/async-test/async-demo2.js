@@ -6,7 +6,7 @@ const db = mysql.createPool({
   password: 'Test123!',
   database: 'db_test',
 })
-const sqlstr = 'select * from grades'
+
 
 function getSql(){
   db.query(sqlstr, (err, results)=>{
@@ -68,22 +68,26 @@ getSqlRes().then((res)=>{
 
 /* async-await方法 */
 async function getGrades(){
-  const sqlstr = "select * from grades"
-  db.query(sqlstr, (err, res)=>{
-    if(err){
-      return err
-    }
-      return res
+  const sqlstr = "select * from grades limit 5"
+  return new Promise((resolve, reject)=>{
+    db.query(sqlstr, (err, res)=>{
+      if(err){
+        return reject(err)
+      }
+      return resolve(res)
+    })
   })
 }
 
 async function getTab(){
   const sqlstr = "select * from testtab"
-  db.query(sqlstr, (err, res)=>{
-    if(err){
-      return err
-    }
-    return res
+  return new Promise((resolve, reject)=>{
+    db.query(sqlstr, (err, res)=>{
+      if(err){
+        reject(err)
+      }
+      resolve(res)
+    })
   })
 }
 
@@ -91,13 +95,26 @@ async function print(){
   const res1 = await getGrades()
   const res2 = await getTab()
   console.log(res1)
-  res1.forEach(element => {
-    console.log(element.month, element.grade)
-  });
-  
-  
-    console.log(element.col1, element.col2)
-  });
+  console.log('aa')
+  console.log(res2)
 }
 
 print()
+
+async function timeout(){
+  return "helloword"
+}
+
+async function timeout2(){
+  return "wolrd"
+}
+
+async function print1(){
+  const res = await timeout()
+  console.log(res)
+  console.log('aaaaa')
+  const res2 = await timeout2()
+  console.log(res2)
+} 
+
+// print1()

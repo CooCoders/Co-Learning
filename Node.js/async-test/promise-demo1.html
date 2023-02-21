@@ -10,29 +10,34 @@
 
 <body>
     <script>
-        function getBooksInfo(url) {
-            const promise = new Promise((resolve, reject) => {
-                const xhr = new XMLHttpRequest()
-                xhr.open('GET', url)
-                xhr.send()
-                xhr.onreadystatechange = function(){
-                    if (xhr.readyState === 4 && xhr.status === 200) {
-                        resolve(xhr.responseText)
-                    } 
-                    else if(xhr.readyState === 4 && xhr.status !== 200) {
-                        reject(new Error(xhr.statusText))
-                    }
+        /*         function getBooksInfo(url) {
+                    const promise = new Promise((resolve, reject) => {
+                        const xhr = new XMLHttpRequest()
+                        xhr.open('GET', url)
+                        xhr.send()
+                        xhr.onreadystatechange = function(){
+                            if (xhr.readyState === 4 && xhr.status === 200) {
+                                resolve(xhr.responseText)
+                            } 
+                            else if(xhr.readyState === 4 && xhr.status !== 200) {
+                                reject(new Error(xhr.statusText))
+                            }
+                        }
+                    })
+                    return promise
                 }
-            })
-            return promise
-        }
+        
+                const url = 'http://www.liulongbin.top:3006/api/getbooks'
+                getBooksInfo(url).then((value) => {
+                    console.log(value)
+                }, (err) => {
+                    console.log(err)
+                }) */
 
-        const url = 'http://www.liulongbin.top:3006/api/getbooks'
-        getBooksInfo(url).then((value) => {
-            console.log(value)
-        }, (err) => {
-            console.log(err)
-        })
+        async function timeout() {
+            return 'hello'
+        }
+        console.log(timeout())
     </script>
 </body>
 
