@@ -2,7 +2,7 @@
   <div class="container">
     <p>Out component:</p>
     <p>{{ texts }}</p>
-    <In></In>
+    <In @get-comment="handler"></In>
   </div>
 </template>
 
@@ -14,8 +14,10 @@ const title = ref('days')
 
 const obj = reactive({ name: 'zhangsan', age: 12 })
 
-const texts = ref('')
-
+const texts = ref('original texts.')
+const handler = (...p) => {
+  texts.value = p
+}
 </script>
 <style scoped>
 .container {
