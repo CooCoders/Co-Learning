@@ -9,6 +9,8 @@ import Review3 from './components/Review3.vue'
 import Board from './components/Board.vue'
 import Watch from './components/Watch.vue'
 import Out from './components/Out.vue'
+import Out1 from './components/Out1.vue'
+import Out2 from './components/Out2.vue'
 </script>
 
 <template>
@@ -17,7 +19,8 @@ import Out from './components/Out.vue'
     <!-- <Review3></Review3> -->
     <!-- <Board></Board> -->
     <!-- <Watch></Watch> -->
-    <Out></Out>
+    <Out1></Out1>
+    <Out2></Out2>
   </div>
 </template>
 
