@@ -1,6 +1,6 @@
 <template>
   <div class="out-container">
-    <input type="text" v-model="outVal" @input="outVal = $event.target.value">
+    <input type="text" v-model="outVal">
     <In1 :outVal="outVal" @inVal="handler"></In1>
   </div>
 </template>
@@ -9,7 +9,8 @@
 import { ref, reactive, handleError } from 'vue'
 import In1 from './In1.vue';
 
-let outVal = ref('')
+const outVal = ref('')
+
 const handler = (msg) => {
   outVal.value = msg
 }

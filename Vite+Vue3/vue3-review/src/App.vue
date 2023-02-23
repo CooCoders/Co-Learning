@@ -11,6 +11,7 @@ import Watch from './components/Watch.vue'
 import Out from './components/Out.vue'
 import Out1 from './components/Out1.vue'
 import Out2 from './components/Out2.vue'
+import Outside from './components/Outside.vue'
 </script>
 
 <template>
@@ -19,8 +20,7 @@ import Out2 from './components/Out2.vue'
     <!-- <Review3></Review3> -->
     <!-- <Board></Board> -->
     <!-- <Watch></Watch> -->
-    <Out1></Out1>
-    <Out2></Out2>
+    <Outside></Outside>
   </div>
 </template>
 
