@@ -12,6 +12,7 @@ import Out from './components/Out.vue'
 import Out1 from './components/Out1.vue'
 import Out2 from './components/Out2.vue'
 import Outside from './components/Outside.vue'
+import Conainer from './components/Conainer.vue'
 </script>
 
 <template>
@@ -20,7 +21,8 @@ import Outside from './components/Outside.vue'
     <!-- <Review3></Review3> -->
     <!-- <Board></Board> -->
     <!-- <Watch></Watch> -->
-    <Outside></Outside>
+    <!-- <Outside></Outside> -->
+    <Conainer></Conainer>
   </div>
 </template>
 
