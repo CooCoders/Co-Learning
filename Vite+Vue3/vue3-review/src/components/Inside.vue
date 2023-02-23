@@ -1,14 +1,16 @@
 <template>
-  <div>
-    <input type="text" v-model="props.modelValue" @input="$emit('update:modelValue', $event.target.value)">
-    <p>{{ props.modelValue }}</p>
+  <div class="inside-container">
+
   </div>
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, watch } from 'vue'
 
-const props = defineProps(['modelValue'])
-const emits = defineEmits(['update:modelValue'])
+const props = defineProps(['aval', 'bval'])
+
+const handler = () => {
+  alert('son')
+}
 </script>
 <style scoped></style>

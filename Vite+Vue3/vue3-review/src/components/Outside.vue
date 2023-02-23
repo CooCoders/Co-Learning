@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <input type="text" v-model="val">
-    <Inside v-model="val" @update:model-value="handler"></Inside>
+  <div class="root-container">
+
   </div>
 </template>
 
@@ -9,10 +8,12 @@
 import { ref, reactive } from 'vue'
 import Inside from './Inside.vue';
 
-const val = ref('')
 
-const handler = (msg) => {
-  val = msg
-}
 </script>
-<style scoped></style>
+<style scoped>
+.root-container {
+  height: 500px;
+  width: 400px;
+  background-color: lightblue;
+}
+</style>
