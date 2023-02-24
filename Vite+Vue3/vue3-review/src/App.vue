@@ -22,7 +22,8 @@ import Conainer from './components/Conainer.vue'
     <!-- <Board></Board> -->
     <!-- <Watch></Watch> -->
     <!-- <Outside></Outside> -->
-    <Conainer></Conainer>
+    <!-- <Conainer></Conainer> -->
+    <Out></Out>
   </div>
 </template>
 

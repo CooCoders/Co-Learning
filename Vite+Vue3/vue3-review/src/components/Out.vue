@@ -1,8 +1,11 @@
 <template>
-  <div class="container">
-    <p>Out component:</p>
-    <p>{{ texts }}</p>
-    <In @get-comment="handler"></In>
+  <div class="out-container">
+    <In>
+      <template #content="{ content, name, likes }">
+        <p>{{ content }}</p>
+        <p>{{ name }}|{{ likes }}</p>
+      </template>
+    </In>
   </div>
 </template>
 
@@ -10,19 +13,16 @@
 import { ref, reactive } from 'vue'
 import In from './In.vue';
 
-const title = ref('days')
-
-const obj = reactive({ name: 'zhangsan', age: 12 })
-
-const texts = ref('original texts.')
-const handler = (...p) => {
-  texts.value = p
-}
+const show = ref(true)
 </script>
 <style scoped>
-.container {
-  height: 400px;
-  width: 500px;
-  border: 1px solid black;
+.out-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+  height: 300px;
+  width: 400px;
+  background-color: lightskyblue;
 }
 </style>
