@@ -2,7 +2,7 @@
   <div class="b-container">
     <h3>Page B</h3>
     <p>Pinia data: {{ counterStore.count }}</p>
-    <button @click="counterStore.add()">Add</button>
+    <button @click="counterStore.add">Add</button>
   </div>
 </template>
 

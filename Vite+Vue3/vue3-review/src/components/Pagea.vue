@@ -4,7 +4,8 @@
     <h3>Page A</h3>
 
     <p>Data from Pinia: {{ counterStore.count }}</p>
-    <button @click="counterStore.sub()">Sub</button>
+    <p>Total Price: {{ counterStore.getPrice }}</p>
+    <button @click="counterStore.sub">Sub</button>
   </div>
 </template>
 
