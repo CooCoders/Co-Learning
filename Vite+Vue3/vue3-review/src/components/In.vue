@@ -1,32 +1,39 @@
 <template>
-  <div>
-    <ul>
-      <li v-if="!items.length">Loading ...</li>
-      <li v-for="item in items">
-        <slot name="content" v-bind="item"></slot>
-      </li>
-    </ul>
-  </div>
+  <ul>
+    <li v-if="!items.length">Loading...</li>
+    <li v-for="item in items">
+      <slot name="liItem" v-bind="item"></slot>
+    </li>
+  </ul>
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, inject } from 'vue'
 
 const items = ref([])
 setTimeout(() => {
   items.value = [
-    { content: 'vue model learning.', name: 'Evean', likes: 20 },
-    { content: 'vue componets', name: 'Lily', likes: 10 }
+    { body: 'vue, single page application', name: 'Lugwig', likes: 20 },
+    { body: 'vue router', name: 'Ray', likes: 10 }
   ]
-}, 2000)
+}, 3000)
 </script>
 <style scoped>
+* {
+  padding: 0;
+  margin: 0;
+}
+
 ul {
+  margin-left: 0;
   list-style-type: none;
+  overflow: hidden;
 }
 
 li {
+  margin: 5px;
+  padding: 2px;
+  height: 70px;
   background-color: bisque;
-  height: 80px;
 }
 </style>

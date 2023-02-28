@@ -13,6 +13,7 @@ import Out1 from './components/Out1.vue'
 import Out2 from './components/Out2.vue'
 import Outside from './components/Outside.vue'
 import Conainer from './components/Conainer.vue'
+import Home from './components/Home.vue'
 </script>
 
 <template>
@@ -23,7 +24,8 @@ import Conainer from './components/Conainer.vue'
     <!-- <Watch></Watch> -->
     <!-- <Outside></Outside> -->
     <!-- <Conainer></Conainer> -->
-    <Out></Out>
+    <!-- <Out></Out> -->
+    <Home></Home>
   </div>
 </template>
 

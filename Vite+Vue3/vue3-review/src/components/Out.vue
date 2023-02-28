@@ -1,28 +1,24 @@
 <template>
-  <div class="out-container">
+  <div class="fa-container">
     <In>
-      <template #content="{ content, name, likes }">
-        <p>{{ content }}</p>
-        <p>{{ name }}|{{ likes }}</p>
+      <template #liItem="obj">
+        <p>{{ obj.body }}</p>
+        <p>{{ obj.name }} | {{ obj.likes }}</p>
       </template>
     </In>
   </div>
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, provide } from 'vue'
 import In from './In.vue';
 
-const show = ref(true)
+
 </script>
 <style scoped>
-.out-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 10px;
-  height: 300px;
-  width: 400px;
+.fa-container {
+  height: 500px;
+  width: 300px;
   background-color: lightskyblue;
 }
 </style>

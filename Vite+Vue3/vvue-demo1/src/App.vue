@@ -28,22 +28,22 @@ import MainVue from './components/review/pinia/Main.vue'
 <template>
   <div class="container">
     <!-- <Test></Test>
-    <Test2></Test2>
-    <ReactivityDemo></ReactivityDemo>
-    <ComputedProp></ComputedProp> -->
+      <Test2></Test2>
+      <ReactivityDemo></ReactivityDemo>
+      <ComputedProp></ComputedProp> -->
     <!-- <ClassBindVue></ClassBindVue> -->
     <!-- <ListDemoVue></ListDemoVue> -->
     <!-- <ReviewVue></ReviewVue> -->
     <!-- <LifeCycleVue></LifeCycleVue> -->
     <!-- <WatcherVue></WatcherVue> -->
     <!-- <GC></GC> -->
-    <RootVue></RootVue>
+    <!-- <RootVue></RootVue> -->
     <!-- <ParentVue></ParentVue> -->
     <!-- <DemoVue></DemoVue> -->
     <!-- <ParentVue></ParentVue> -->
     <!-- <HooksVue></HooksVue> -->
     <!-- <CDemoVue></CDemoVue> -->
-    <!-- <RDemoVue></RDemoVue> -->
+    <RDemoVue></RDemoVue>
     <!-- <MainVue></MainVue> -->
     <!-- <PRootVue></PRootVue> -->
     <!-- <ProductVue></ProductVue> -->
